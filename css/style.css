@@ -171,7 +171,16 @@ img {
     max-width: 620px;
 
     margin-bottom: 22px;
+
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all .8s ease 0s;
 }
+.intro_title._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
 
 .intro_subtitle {
     font-size: 16px;
@@ -180,6 +189,26 @@ img {
 
     max-width: 550px;
     margin-bottom: 60px;
+
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all .8s ease 0s;
+}
+
+.intro_subtitle._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.search-form {
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all .8s ease 0s;
+}
+
+.search-form._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
 
 .search-form_wrap p {
@@ -236,7 +265,8 @@ img {
 
 /*BENEFITS*/
 .benefits {
-    margin-bottom: 131px;
+    margin-bottom: 100px;
+    padding-top: 10px;
 }
 
 .benefits_cont {
@@ -253,7 +283,7 @@ img {
     display: inline-block;
     width: 100%;
 
-    padding: 93px 0 91px 110px;
+    padding: 65px 0 65px 110px;
     margin: 0 auto;
     position: absolute;
     top: 0;
@@ -269,6 +299,14 @@ img {
 
 .benefits_card {
     width: 33.33333%;
+    transform: translate(0px, 20%);
+    opacity: 0;
+    transition: all .8s ease 0s;
+}
+
+.benefits_card._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
 
 .benefits_card:first-child {
@@ -326,7 +364,7 @@ img {
 /*PLACES*/
 
 .places {
-    margin-bottom: 131px;
+    margin-bottom: 100px;
 }
 
 .places_preview {
@@ -437,16 +475,61 @@ img {
     align-items: center;
 }
 
-.tours_item img{
+.tours_item_img1 {
     width: 50%;
     height: 354px;
     object-fit: cover;
     padding-right: 40px;
+    transform: translate(-50%, 0px);
+    opacity: 0;
+    transition: all .8s ease 0s;
+}
+
+.tours_item_img1._active {
+    transform: translate(0px , 0px);
+    opacity: 1;
+}
+
+.tours_item_img2 {
+    width: 50%;
+    height: 354px;
+    object-fit: cover;
+    padding-right: 40px;
+    transform: translate(50%, 0px);
+    opacity: 0;
+    transition: all .8s ease 0s;
+}
+
+.tours_item_img2._active {
+    transform: translate(0px , 0px);
+    opacity: 1;
 }
 
 .tours_item_title {
     width: 50%;
     padding-left: 40px;
+}
+
+.tit_1 {
+    transform: translate(50%, 0);
+    opacity: 0;
+    transition: all .8s ease 0s;
+}
+
+.tit_1._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.tit_2 {
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: all .8s ease 0s;
+}
+
+.tit_2._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
 
 .tours_item_title h3 {
@@ -501,7 +584,7 @@ img {
 /*TOP*/
 
 .top {
-    margin-bottom: 144px;
+    margin-bottom: 100px;
 }
 
 .top_title {
@@ -520,6 +603,39 @@ img {
     margin-bottom: 60px;
     display: flex;
     flex-direction: column;
+}
+
+.tc_1 {
+    transform: scale(.9);
+    opacity: 0;
+    transition: all .2s linear;
+}
+
+.tc_1._active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.tc_2 {
+    transform: scale(.9);
+    opacity: 0;
+    transition: all .4s linear;
+}
+
+.tc_2._active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.tc_3 {
+    transform: scale(.9);
+    opacity: 0;
+    transition: all .6s linear;
+}
+
+.tc_3._active {
+    transform: scale(1);
+    opacity: 1;
 }
 
 .top_card_img {
@@ -619,40 +735,6 @@ img {
 
 .top_card_a:hover {
     background-color: #348bff;
-}
-
-
-
-
-
-
-
-
-
-/*VIDEOS*/
-
-.videos {
-    width: 100%;
-/*    background-color: #0E1D28;*/
-}
-
-.videos_container {
-    width: 100%;
-    max-width: 1900px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.video_item {
-    padding-top: 46.25%;
-}
-
-.video_element {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
 
 
