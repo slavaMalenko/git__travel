@@ -58,6 +58,22 @@ if (animItems.length > 0) {
 
 
 
+//BURGER
+
+(function () {
+    const burgerItem = document.querySelector('.burger');
+    const menu = document.querySelector('.header_nav_menu');
+    const menuCloseItem = document.querySelector('.header__nav-close')
+    burgerItem.addEventListener('click', () => {
+        menu.classList.add('header_nav_menu_active');
+    });
+    menuCloseItem.addEventListener('click', () => {
+        menu.classList.remove('header_nav_menu_active');
+    })
+}());
+
+
+
 
 
 
